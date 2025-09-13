@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleKing - Bespoke Tailoring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+
+    <header class="bg-gray-900 text-white p-4 md:p-6 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center">
+                <img src="./assets/logo.jpg" alt="StyleKing Logo" class="w-16 h-16 rounded-full flex-shrink-0 mr-4">
+                <div>
+                    <div class="text-4xl font-bold tracking-tight">
+                        <span class="text-indigo-400">Style</span>King
+                    </div>
+                    <div class="text-xs text-gray-400 uppercase tracking-widest mt-1">
+                        Fashion Designer
+                    </div>
+                </div>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16" />
+                </svg>
+            </button>
+
+            <nav id="mobile-menu" class="hidden md:flex flex-col md:flex-row items-center gap-4 md:gap-8 text-lg">
+                <a href="https://maps.app.goo.gl/Kb3rXhoZXCwC1xHf9" target="_blank"
+                    class="hover:text-indigo-400 transition-colors duration-300 icon-link">
+                    <span class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 icon-hover">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 6.6-6 12-6 12S6 17.1 6 10.5a7.5 7.5 0 0 1 15 0Z" />
+                        </svg>
+                        Location
+                    </span>
+                </a>
+
+                <a href="tel:+919141005195" class="hover:text-indigo-400 transition-colors duration-300 icon-link">
+                    <span class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 icon-hover">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.18.448l-.5.748a4.5 4.5 0 0 1-5.742 1.223l-.007-.007-.001-.002-.001-.002-.002-.002-.002-.002-.002-.001-.002-.001a4.5 4.5 0 0 1-1.223-5.742l.748-.5c.393-.278.558-.74.448-1.18L3.65 3.517A1.897 1.897 0 0 1 2.5 4.5a2.25 2.25 0 0 0 0 2.25Z" />
+                        </svg>
+                        +91 9141005195
+                    </span>
+                </a>
+
+                <a href="#about-us" class="hover:text-indigo-400 transition-colors duration-300 smooth-scroll icon-link">
+                    <span class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 icon-hover">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 1.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-3ZM12 15.75a.75.75 0 0 0 .75-.75V8.25a.75.75 0 0 0-1.5 0v6.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                        About Us
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4 md:p-8">
+        <div class="carousel-container">
+            <div id="carousel-slides" class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="https://linentrail.com/cdn/shop/articles/Brown_Pants_blog_banner.jpg?v=1753881467"
+                        alt="Custom tailored suits" class="w-full h-full object-cover rounded-3xl" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://www.southernliving.com/thmb/pcq4-nqsscHLVE5zs_AL6IbJXSE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oxford_shirts_hanging_in_closet-508072907-2000-eb2c92b7f8f1471ea059d0b050404987.jpg"
+                        alt="Formal wear for men" class="w-full h-full object-cover rounded-3xl" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://www.kalkifashion.com/blogs/wp-content/uploads/2023/07/Tips_For_Stylish_Ethnic_Wear_On_Independence_Day_In_The_Office.jpg"
+                        alt="Traditional Indian attire for men" class="w-full h-full object-cover rounded-3xl" />
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://png.pngtree.com/background/20250209/original/pngtree-a-row-of-men-s-suits-in-different-colors-and-patterns-picture-image_15783975.jpg"
+                        alt="Tailored jackets and blazers" class="w-full h-full object-cover rounded-3xl" />
+                </div>
+            </div>
+
+            <button id="prev-btn" class="carousel-nav-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button id="next-btn" class="carousel-nav-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+
+            <div id="dots-container" class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+    <section class="container mx-auto p-8 mb-16">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+            Personalized Perfection
+        </h2>
+        <div class="image-grid">
+            <div class="grid-item">
+                <img src="https://i.etsystatic.com/26526080/r/il/4f387b/5235287730/il_1080xN.5235287730_813t.jpg" alt="Bespoke Suit"
+                    class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Classic Business Suit</h3>
+                    <p class="overlay-desc">Sharp lines and a perfect fit for the modern professional.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://imagescdn.louisphilippe.com/img/app/product/3/39828241-16481653.jpg?auto=format&w=390"
+                    alt="Casual Blazer" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Casual Blazer</h3>
+                    <p class="overlay-desc">Light and comfortable, perfect for a smart-casual look.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://img.tatacliq.com/images/i13/437Wx649H/MP000000019038172_437Wx649H_202309021843281.jpeg"
+                    alt="Traditional Kurta" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Traditional Kurta Set</h3>
+                    <p class="overlay-desc">Hand-stitched for weddings and festive gatherings.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://media-us.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000013808571-Black-Black-1000013808571_04-2100.jpg"
+                    alt="Custom Shirt" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Custom Dress Shirt</h3>
+                    <p class="overlay-desc">Made with premium fabric for all-day comfort.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://imagescdn.pantaloons.com/img/app/product/1/1008498-13599557.jpg?auto=format&w=450"
+                    alt="Formal Trousers" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Formal Trousers</h3>
+                    <p class="overlay-desc">Tailored to fit, providing elegance and freedom of movement.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://imgs-aashniandco.gumlet.io/pub/media/catalog/product/cache/af07caf8c8bf4be6f623b827abceb68f/s/w/sw001_1_1.jpg?w=400&v1.0"
+                    alt="Sherwani" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Designer Sherwani</h3>
+                    <p class="overlay-desc">Intricate detailing for a magnificent appearance.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://asianpartywear.com/cdn/shop/products/1201_1553_2376.jpg?v=1612945129"
+                    alt="Waistcoat" class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Stylish Waistcoat</h3>
+                    <p class="overlay-desc">The perfect addition to a three-piece suit.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="https://jadeblue.com/cdn/shop/products/8zq8_2.jpg?v=1685534650" alt="Jodhpuri Suit"
+                    class="rounded-2xl w-full h-full object-cover">
+                <div class="overlay">
+                    <h3 class="overlay-title">Classic Jodhpuri</h3>
+                    <p class="overlay-desc">A timeless fusion of Indian tradition and modern tailoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-us" class="container mx-auto p-4 md:p-6 my-8 bg-white rounded-3xl shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-4 animate-fade-in-down">
+            The Art of Men's Tailoring
+        </h2>
+        <p class="text-lg text-center text-gray-600 leading-relaxed max-w-xl mx-auto animate-fade-in">
+            <span class="text-2xl font-extrabold text-indigo-600"> Welcome to StyleKing
+            </span><br><br>
+            At StyleKing, we specialize in exclusive men’s tailoring, bringing style, elegance, and
+            comfort together in every stitch. We believe that a perfect fit creates perfect confidence.<br><br>
+            From classic formals to stylish casuals, we design and stitch all kinds of men’s wear with precision.
+            Whether it’s a wedding, party, business meeting, or everyday wear, our expert tailoring ensures you always
+            look your best.
+        <div class="flex flex-wrap justify-center gap-4 mt-6 text-sm">
+            <div class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-indigo-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>Customized measurements for the perfect fit</span>
+            </div>
+            <div class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-indigo-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 1.5a.75.75 0 0 0-1.5 0v3a.75.75 0 0 0 1.5 0v-3ZM12 15.75a.75.75 0 0 0 .75-.75V8.25a.75.75 0 0 0-1.5 0v6.75c0 .414.336.75.75.75Z" />
+                </svg>
+                <span>Modern & traditional designs</span>
+            </div>
+            <div class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-indigo-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.5 20.25v-4.5c0-1.393.914-2.5 2.053-2.5h.394c1.139 0 2.053 1.107 2.053 2.5v4.5m4.5-8.25V5.25a.75.75 0 0 0-.75-.75h-3.375a.75.75 0 0 0-.75.75v6.75m4.5-8.25h-3.375c-.414 0-.75.336-.75.75V19.5M10.5 10.5H5.25M10.5 13.5H5.25m5.25 3H5.25m-3 5.25h17.25c.414 0 .75-.336.75-.75V3.75a.75.75 0 0 0-.75-.75H2.25a.75.75 0 0 0-.75.75v18c0 .414.336.75.75.75Z" />
+                </svg>
+                <span>Premium fabrics and quality stitching</span>
+            </div>
+            <div class="flex items-center text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-indigo-500 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.509 10.879 12.31 9.7 10.928 9.7c-1.4 0-2.528 1.129-2.528 2.528v1.458M12 6h.008v.008H12Zm0 3h.008v.008H12ZM3 13.125l7.245 4.347c.307.185.708.185 1.015 0L21 13.125M3 13.125a18.068 18.068 0 0 1 9.013-2.126c2.816-.141 5.617-.141 8.432 0M3 13.125c1.802.261 3.61.393 5.412.393" />
+                </svg>
+                <span>Affordable prices with on-time delivery</span>
+            </div>
+        </div>
+        <p class="text-lg text-center text-gray-600 leading-relaxed max-w-xl mx-auto mt-6 animate-fade-in">
+            Your style, your fit, your personality – we craft it all with passion. Step into StyleKing
+            and experience tailoring that makes you stand out.
+        </p>
+    </section>
+
+    <footer class="bg-gray-900 text-white p-6 md:p-8 mt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold text-indigo-400">About StyleKing</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    We have been crafting bespoke men's wear with passion and precision since 2010. Our mission is to
+                    provide you with the perfect fit and style for any occasion.
+                </p>
+            </div>
+            <div id="location" class="space-y-2">
+                <h3 class="text-xl font-bold text-indigo-400">Our Address</h3>
+                <p class="text-gray-400 text-sm">
+                    Ground Floor, M K Tower, <br>
+                    Gulbarga HO, Gulbarga - 585101 <br>
+                    (Sukh Sagar Lodge Building)
+                </p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold text-indigo-400">Contact Us</h3>
+                <p class="text-gray-400 text-sm">
+                    Phone: <a href="tel:+919141005195" class="hover:underline">+91 9141005195</a><br>
+                    Email: <a href="mailto:shivrajpatange4@gmail.com"
+                        class="hover:underline">shivrajpatange4@gmail.com</a>
+                </p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold text-indigo-400">Contact via WhatsApp</h3>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/919141005195" target="_blank" aria-label="WhatsApp"
+                        class="hover:text-indigo-400 transition-colors">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                            alt="WhatsApp Icon" class="w-10 h-10">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
